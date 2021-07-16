@@ -11,6 +11,13 @@ const Header = () => {
   return (
     <StyledHeader>
       <img src={logo} alt="logo" />
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Your profile</li>
+        </ul>
+      </nav>
     </StyledHeader>
   )
 };
