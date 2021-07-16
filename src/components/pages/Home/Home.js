@@ -9,7 +9,7 @@ import StyledHome from './StyledHome';
 
 const Home = ({ data }) => {
   return (
-    <StyledHome>
+    <StyledHome socialBG={data[0].img}>
       <section className="center-column">
         <article className="social-card">
           <div className="img-wrapper">
