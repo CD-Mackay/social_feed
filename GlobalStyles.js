@@ -1,5 +1,5 @@
 import { styled, createGlobalStyle } from 'styled-components';
-
+import ('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@300;400&display=swap');
 export const GlobalStyle = createGlobalStyle`
   /*
     START OF RESET
@@ -56,5 +56,40 @@ export const GlobalStyle = createGlobalStyle`
   	border-spacing: 0;
   }
   /* END OF RESET */
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
 
 `;
