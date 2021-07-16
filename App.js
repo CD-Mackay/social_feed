@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 
 /* Component Imports */
-import Home from 'pages/Home/Home';
+import Home from 'pages/Home/Home'
+import Header from 'templates/Header/Header'
 
 /* Asset Imports */
 import { GlobalStyle } from './GlobalStyles.js'
@@ -71,11 +72,12 @@ const App = () => {
     <Router>
       <StyledApp>
           <GlobalStyle />
-          <Switch>
-            <Route exact path="/">
-              <Home data={data} />
-            </Route>
-          </Switch>
+          <Header />
+            <Switch>
+              <Route exact path="/">
+                <Home data={data} />
+              </Route>
+            </Switch>
       </StyledApp>
     </Router>
   )
