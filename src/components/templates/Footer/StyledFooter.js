@@ -6,6 +6,13 @@ const StyledFooter = styled.section`
   height: 100px;
   position: fixed;
   width: 100%;
+
+  p{
+    color: #64EB15;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+  }
 `
 
 export default StyledFooter;
