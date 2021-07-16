@@ -10,7 +10,9 @@ import StyledHome from './StyledHome';
 const Home = ({ data }) => {
   return (
     <StyledHome>
-      <h1>{data[0].author}</h1>
+      <section className="center-column">
+
+      </section>
     </StyledHome>
   )
 };
