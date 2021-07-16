@@ -1,24 +1,24 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.section`
-  background-color: #6E0A70;
   display: grid;
   grid-template-columns: 230px 300px;
   justify-content: space-between;
-  height: 100px;
+  height: 10vh;
   width: 100%;
   align-items: center;
+  border-bottom: 1px solid #fff;
   
   img{
     display: block;
-    max-height: 100px;
+    max-height: 10vh;
   }
   
   nav {
     ul{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      
+
       li{
         color: #64EB15;
       }
