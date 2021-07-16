@@ -7,8 +7,10 @@ import {
 } from "react-router-dom";
 
 /* Component Imports */
+import Footer from 'templates/Footer/Footer'
 import Home from 'pages/Home/Home'
 import Header from 'templates/Header/Header'
+
 
 /* Asset Imports */
 import { GlobalStyle } from './GlobalStyles.js'
@@ -73,11 +75,12 @@ const App = () => {
       <StyledApp>
           <GlobalStyle />
           <Header />
-            <Switch>
-              <Route exact path="/">
-                <Home data={data} />
-              </Route>
-            </Switch>
+          <Switch>
+            <Route exact path="/">
+              <Home data={data} />
+            </Route>
+          </Switch>
+          <Footer />
       </StyledApp>
     </Router>
   )
