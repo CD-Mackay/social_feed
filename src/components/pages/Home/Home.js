@@ -7,10 +7,10 @@ import React from 'react';
 /* Asset Imports */
 import StyledHome from './StyledHome';
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <StyledHome>
-      <h1>I am Home</h1>
+      <h1>{data[0].author}</h1>
     </StyledHome>
   )
 };
