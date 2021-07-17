@@ -51,6 +51,15 @@ const StyledHome = styled.section`
       .vote, .share {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        button {
+          background-color: white;
+          border: none;
+        }
+
+        button:hover {
+          color: blue;
+        }
       }
     }
   }
