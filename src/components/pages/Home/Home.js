@@ -23,8 +23,8 @@ const Home = ({ data }) => {
           </section>
           <section className="post-control">
             <div className="vote">
-              <p>Upvote</p>
-              <p>Downvote</p>
+              <p>Upvote - {data[0].likes}</p>
+              <p>Downvote - {data[0].dislikes}</p>
               <p>Retweeeeet</p>
             </div>
             <div className="share">
