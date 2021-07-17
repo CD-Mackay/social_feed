@@ -6,10 +6,16 @@ import React from 'react';
 
 /* Asset Imports */
 import StyledHome from './StyledHome';
+import { FaArrowAltCircleUp, 
+         FaArrowCircleDown, 
+         FaRetweet,
+         FaInstagram,
+         FaFacebookSquare,
+         FaDigg } from "react-icons/fa";
+
 
 const Home = ({ data }) => {
 
-  console.log(data[0])
 
   return (
     <StyledHome socialBG={data[0].img}>
@@ -26,14 +32,14 @@ const Home = ({ data }) => {
           </section>
           <section className="post-control">
             <div className="vote">
-              <p>Upvote - {data[0].likes}</p>
-              <p>Downvote - {data[0].dislike}</p>
-              <p>Retweeeeet</p>
+              <p><FaArrowAltCircleUp /> - {data[0].likes}</p>
+              <p><FaArrowCircleDown /> - {data[0].dislike}</p>
+              <p><FaRetweet /></p>
             </div>
             <div className="share">
-              <p>Insta</p>
-              <p>Facebook</p>
-              <p>Tiktok</p>
+              <FaInstagram />
+              <FaFacebookSquare />
+              <FaDigg />
             </div>
           </section>
         </article>
