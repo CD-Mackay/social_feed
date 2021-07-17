@@ -1,5 +1,4 @@
 import { styled, createGlobalStyle } from 'styled-components';
-import ('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@300;400&display=swap');
 export const GlobalStyle = createGlobalStyle`
   /*
     START OF RESET
