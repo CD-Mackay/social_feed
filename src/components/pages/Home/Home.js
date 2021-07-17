@@ -8,6 +8,9 @@ import React from 'react';
 import StyledHome from './StyledHome';
 
 const Home = ({ data }) => {
+
+  console.log(data[0])
+
   return (
     <StyledHome socialBG={data[0].img}>
       <section className="center-column">
@@ -24,7 +27,7 @@ const Home = ({ data }) => {
           <section className="post-control">
             <div className="vote">
               <p>Upvote - {data[0].likes}</p>
-              <p>Downvote - {data[0].dislikes}</p>
+              <p>Downvote - {data[0].dislike}</p>
               <p>Retweeeeet</p>
             </div>
             <div className="share">
