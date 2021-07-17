@@ -52,12 +52,12 @@ const StyledHome = styled.section`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
-        button {
+        .post-control-button {
           background-color: white;
           border: none;
         }
 
-        button:hover {
+        .post-control-button:hover {
           color: blue;
         }
       }

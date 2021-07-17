@@ -32,14 +32,14 @@ const Home = ({ data }) => {
           </section>
           <section className="post-control">
             <div className="vote">
-              <button><FaArrowAltCircleUp /> {data[0].likes}</button>
-              <button><FaArrowCircleDown /> {data[0].dislike}</button>
-              <button><FaRetweet /></button>
+              <button className="post-control-button"><FaArrowAltCircleUp /> {data[0].likes}</button>
+              <button className="post-control-button"><FaArrowCircleDown /> {data[0].dislike}</button>
+              <button className="post-control-button"><FaRetweet size={16} /></button>
             </div>
             <div className="share">
-              <FaInstagram />
-              <FaFacebookSquare />
-              <FaDigg />
+              <button className="post-control-button"><FaInstagram /></button>
+              <button className="post-control-button"><FaFacebookSquare /></button>
+              <button className="post-control-button"><FaDigg /></button>
             </div>
           </section>
         </article>
