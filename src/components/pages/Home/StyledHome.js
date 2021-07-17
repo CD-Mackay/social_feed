@@ -19,7 +19,20 @@ const StyledHome = styled.section`
     margin: 10px;
     -webkit-box-shadow: 1px 2px 16px 0px #383838; 
 
-    
+    .author-date {
+
+      p {
+        color: #a9a9a9;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .post-content, h3 {
+      margin-bottom: 5px;
+    }
+
+
     .img-wrapper {
       background-image: url(${props => props.socialBG});
       background-size: cover;
