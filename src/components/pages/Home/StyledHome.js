@@ -45,8 +45,22 @@ const StyledHome = styled.section`
 
     .post-control {
       display: grid;
-      grid-template-columns: 40% 40%;
+      grid-template-columns: 35% 35%;
       justify-content: space-between;
+
+      button {
+        display: flex;
+        flex-direction: row;
+
+        span {
+          margin-top: 3px;
+          margin-left: 3px;
+        }
+      }
+
+      .post-icon {
+        font-size: 18px;
+      }
       
       .vote, .share {
         display: grid;
