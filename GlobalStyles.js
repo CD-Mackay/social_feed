@@ -91,4 +91,12 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
 
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
 `;
