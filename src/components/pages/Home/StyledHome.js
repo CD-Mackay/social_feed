@@ -45,7 +45,7 @@ const StyledHome = styled.section`
 
     .post-control {
       display: grid;
-      grid-template-columns: 40% 40%;
+      grid-template-columns: 35% 35%;
       justify-content: space-between;
 
       button {
@@ -54,6 +54,7 @@ const StyledHome = styled.section`
 
         span {
           margin-top: 3px;
+          margin-left: 3px;
         }
       }
 
