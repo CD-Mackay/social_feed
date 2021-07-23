@@ -21,6 +21,14 @@ const StyledSocialCard = styled.article`
     margin-bottom: 5px;
   }
 
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
 
   .img-wrapper {
     background-image: url(${props => props.socialBG});
@@ -34,8 +42,9 @@ const StyledSocialCard = styled.article`
 
   .post-control {
     display: grid;
-    grid-template-columns: 35% 35%;
+    grid-template-columns: 45% 45%;
     justify-content: space-between;
+    margin-top: 10px;
 
     button {
       display: flex;
@@ -64,6 +73,17 @@ const StyledSocialCard = styled.article`
         color: blue;
       }
     }
+  }
+
+
+  @media screen and (min-width: 576px) {
+    .post-control {
+      grid-template-columns: 35% 35%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
   }
 `
 
