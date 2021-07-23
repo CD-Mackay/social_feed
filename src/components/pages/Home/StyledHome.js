@@ -6,8 +6,7 @@ const StyledHome = styled.section`
 
   .center-column{
     width: 55%;
-    height: 80vh;
-    padding: 10px;
+    padding: 85px 10px 85px 10px;
     margin: 0 auto;
   }
 `

@@ -18,7 +18,7 @@ const Home = ({ data }) => {
       date={tweet.date}
       content={tweet.content}
       likes={tweet.likes}
-      dislikes={tweet.dislike}
+      dislike={tweet.dislike}
       img={tweet.img}
       key={index}
     />
