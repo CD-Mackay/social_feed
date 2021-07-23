@@ -11,20 +11,22 @@ import StyledHome from './StyledHome';
 
 
 const Home = ({ data }) => {
-
-
+  const socialCards = data.map((tweet, index) => (
+    <SocialCard 
+      author={tweet.author} 
+      title={tweet.title}
+      date={tweet.date}
+      content={tweet.content}
+      likes={tweet.likes}
+      dislikes={tweet.dislike}
+      img={tweet.img}
+      key={index}
+    />
+  ))
   return (
     <StyledHome >
       <section className="center-column">
-        <SocialCard 
-        author={data[0].author} 
-        title={data[0].title}
-        date={data[0].date}
-        content={data[0].content}
-        likes={data[0].likes}
-        dislikes={data[0].dislike}
-        img={data[0].img}
-        />
+      {socialCards}
       </section>
     </StyledHome>
   )
