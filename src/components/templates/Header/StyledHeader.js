@@ -27,8 +27,16 @@ const StyledHeader = styled.section`
     margin-right: 5px;
 
     button {
+      background-color: #6E0A70;
+      border: 1px solid #64EB15;
+      border-radius: 5px;
+      color: #64EB15;
+      display: block;
+      height: 40px;
+      width: 40px;
       svg {
         pointer-events: none;
+        font-size: 24px;
       }
     }
     ul {
@@ -42,6 +50,8 @@ const StyledHeader = styled.section`
         margin-top: 5px;
         margin-bottom: 5px;
         border-bottom: 1px solid #64EB15;
+        text-align: right;
+        padding: 5px;
       }
     }
   }
@@ -66,7 +76,7 @@ const StyledHeader = styled.section`
   @media screen and (min-width: 576px) {
 
     grid-template-columns: 230px 300px;
-    
+
     .classic-nav {
       display: block;
     }
