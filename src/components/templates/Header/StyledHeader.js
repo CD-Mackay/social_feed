@@ -23,6 +23,27 @@ const StyledHeader = styled.section`
 
   .mobile-nav {
     display: block;
+    justify-self: end;
+    margin-right: 5px;
+
+    button {
+      svg {
+        pointer-events: none;
+      }
+    }
+    ul {
+      position: absolute;
+      top: 75px;
+      right: 0px;
+      background-color: #6E0A70;
+      padding: 20px;
+
+      li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #64EB15;
+      }
+    }
   }
 
 

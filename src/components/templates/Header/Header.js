@@ -4,15 +4,15 @@ import React from 'react';
 /* Component Imports */
 
 /* Asset Imports */
-import StyledHeader from './StyledHeader';
+import StyledHeader from './StyledHeader'
 import logo from 'src/assets/images/logo.png'
+import { FiMenu } from 'react-icons/fi'
 
 const Header = () => {
 
   const showHideNav = (event) => {
     event.preventDefault();
     let nextSibling = event.target.nextElementSibling;
-
     if (nextSibling.classList.contains("hide")) {
       nextSibling.classList.remove("hide")
       nextSibling.classList.add("show")
@@ -32,7 +32,7 @@ const Header = () => {
         </ul>
       </nav>
       <nav className="mobile-nav">
-        <button onClick={showHideNav}>Menu</button>
+        <button onClick={showHideNav}><FiMenu /></button>
           <ul className="hide">
             <li>Home</li>
             <li>About</li>
