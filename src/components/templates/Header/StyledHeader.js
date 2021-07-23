@@ -12,6 +12,20 @@ const StyledHeader = styled.section`
   top: 0;
   width: 100%;
   z-index: 99;
+
+  .classic-nav {
+    display: none;
+    
+    ul {
+      display: grid;
+    }
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+
   
   img{
     display: block;
@@ -20,12 +34,21 @@ const StyledHeader = styled.section`
   
   nav {
     ul{
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
 
       li{
         color: #64EB15;
       }
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    .classic-nav {
+      display: block;
+    }
+
+    .mobile-nav {
+      display: none;
     }
   }
 `
