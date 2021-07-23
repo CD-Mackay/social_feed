@@ -52,7 +52,7 @@ const dataBase = [
       content: "I love a good cellie, but mate what are ya thinkin",
       author: "Tai Tuivasa",
       date: "2021-07-10",
-      img: "https://cdn.vox-cdn.com/thumbor/UgWtIvdepy2b0Sl9mnVUnAxpsSw=/0x0:1396x785/1200x800/filters:focal(497x365:719x587)/cdn.vox-cdn.com/uploads/chorus_image/image/60013747/tai_tuivasa_shoey_ufc_225.0.jpg",
+      img: "https://pbs.twimg.com/media/Ew-CFyGWYAIjIh0.jpg",
       likes: 10000,
       dislike: 15,
       comments: []

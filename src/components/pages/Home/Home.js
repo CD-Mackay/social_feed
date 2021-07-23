@@ -3,46 +3,30 @@ import React from 'react';
 
 
 /* Component Imports */
+import SocialCard from 'modules/SocialCard/SocialCard'
 
 /* Asset Imports */
 import StyledHome from './StyledHome';
-import { FaArrowAltCircleUp, 
-         FaArrowCircleDown, 
-         FaRetweet,
-         FaInstagram,
-         FaFacebookSquare,
-         FaDigg } from "react-icons/fa";
+
 
 
 const Home = ({ data }) => {
-
-
+  const socialCards = data.map((tweet, index) => (
+    <SocialCard 
+      author={tweet.author} 
+      title={tweet.title}
+      date={tweet.date}
+      content={tweet.content}
+      likes={tweet.likes}
+      dislikes={tweet.dislike}
+      img={tweet.img}
+      key={index}
+    />
+  ))
   return (
-    <StyledHome socialBG={data[0].img}>
+    <StyledHome >
       <section className="center-column">
-        <article className="social-card">
-          <div className="img-wrapper">
-          </div>
-          <section className="post-content">
-            <div className="author-date">
-              <p>{data[0].author} - {data[0].date}</p>
-            </div>
-              <h3>{data[0].title}</h3>
-              <p>{data[0].content}</p>
-          </section>
-          <section className="post-control">
-            <div className="vote">
-              <button className="post-control-button"><FaArrowAltCircleUp className="post-icon" /><span>{data[0].likes}</span></button>
-              <button className="post-control-button"><FaArrowCircleDown  className="post-icon" /><span>{data[0].dislike}</span></button>
-              <button className="post-control-button"><FaRetweet className="post-icon" /></button>
-            </div>
-            <div className="share">
-              <button className="post-control-button"><FaInstagram className="post-icon" /></button>
-              <button className="post-control-button"><FaFacebookSquare className="post-icon" /></button>
-              <button className="post-control-button"><FaDigg className="post-icon" /></button>
-            </div>
-          </section>
-        </article>
+      {socialCards}
       </section>
     </StyledHome>
   )
