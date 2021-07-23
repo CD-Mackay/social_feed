@@ -5,7 +5,7 @@ const StyledHeader = styled.section`
   background-color: #6E0A70;
   border-bottom: 1px solid #fff;
   display: grid;
-  grid-template-columns: 230px 300px;
+  grid-template-columns: 25% 30%;
   justify-content: space-between;
   height: 10vh;
   position: fixed;
@@ -64,6 +64,9 @@ const StyledHeader = styled.section`
   }
 
   @media screen and (min-width: 576px) {
+
+    grid-template-columns: 230px 300px;
+    
     .classic-nav {
       display: block;
     }
