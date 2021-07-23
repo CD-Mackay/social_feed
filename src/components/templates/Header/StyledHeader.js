@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.section`
+  align-items: center;
+  background-color: #6E0A70;
+  border-bottom: 1px solid #fff;
   display: grid;
   grid-template-columns: 230px 300px;
   justify-content: space-between;
   height: 10vh;
+  position: fixed;
+  top: 0;
   width: 100%;
-  align-items: center;
-  border-bottom: 1px solid #fff;
+  z-index: 99;
   
   img{
     display: block;
